@@ -446,9 +446,9 @@ class _SliverTimelineState extends ConsumerState<_SliverTimeline> {
                         _baseScaleFactor = _scaleFactor;
                       };
 
-                      scale.onUpdate = (details) {
-                        final newScaleFactor = math.max(math.min(5.0, _baseScaleFactor * details.scale), 1.0);
-                        final newPerRow = 7 - newScaleFactor.toInt();
+                    scale.onUpdate = (details) {
+                      final newScaleFactor = math.max(math.min(9.0, _baseScaleFactor * details.scale), 1.0);
+                      final newPerRow = 11 - newScaleFactor.toInt();
 
                         if (newPerRow != _perRow) {
                           final targetAssetIndex = _getCurrentAssetIndex(segments);

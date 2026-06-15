@@ -29,9 +29,9 @@ class LayoutSettings extends HookConsumerWidget {
           valueNotifier: tilesPerRow,
           text: 'theme_setting_asset_list_tiles_per_row_title'.tr(namedArgs: {'count': "${tilesPerRow.value}"}),
           label: "${tilesPerRow.value}",
-          maxValue: 6,
+          maxValue: 10,
           minValue: 2,
-          noDivisons: 4,
+          noDivisons: 8,
           onChangeEnd: (value) {
             ref.invalidate(appSettingsServiceProvider);
           },
